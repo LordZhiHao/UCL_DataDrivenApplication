@@ -1,0 +1,144 @@
+/* Registration Page css file */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    background-image: url('../images/UCL_logo.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(70%) brightness(70%) opacity(70%);
+    z-index: -1;
+    position: fixed; /* Ensures the pseudo-element covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    z-index: 1;
+}
+
+#header {
+    background-color: #500778;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 1;
+    width: 100%;
+}
+
+#welcomeText {
+    display: flex;
+    color: #FFCA36;
+    font-size: 2em;
+    font-weight: bolder;
+    top: auto;
+    margin: auto;
+    width: 60%;
+}
+
+.right-links a{
+    padding: 0 10px;
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#homeBtn {
+    background-color: #34C6C6;
+    right: 15%;
+    top: 1.5%;
+    height: 25px;
+    border-color: #34C6C6;
+    outline: None;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all .3s;
+    margin: 20px;
+    padding: 0px 10px;
+}
+
+#footer {
+    background-color: #500778;
+    color: #FFCA36;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#udpateDetails {
+    display: flex;
+    flex-direction: row;
+}
+
+#truncateBtn {
+    background-color: #34C6C6;
+    border-color: #34C6C6;
+    outline: None;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all .3s;
+    margin: auto;
+    margin-top: 2vh;
+    margin-right: 2%;
+    padding: 5px 10px;
+    width: 20%;
+}
+
+#registerBtn {
+    background-color: #34C6C6;
+    border-color: #34C6C6;
+    outline: None;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all .3s;
+    margin: auto;
+    margin-top: 2vh;
+    margin-left: 2%;
+    padding: 5px 10px;
+    width: 20%;
+}
+
+#contactTable {
+    width: 90%;
+    border-color: black;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #FFCA36;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: greenyellow; 
+}
+
+tr:nth-child(odd) {
+    background-color: #52C152; 
+}
